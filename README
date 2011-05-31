@@ -1,0 +1,46 @@
+This is a simple python/perl script mashup that allows you to print
+text to a Brother PT-1230PC through a web browser.
+
+  Basically you visit:
+  http://localhost:8080/printtext/hello
+
+  And the Labeler will print hello with a line feed.
+
+Currently only text is supported.  Other models of brother label
+printers may work but I have only tested it on the Brother PT-1230PC.
+
+
+
+------------------------------------
+Requirements:
+  libgtk2-perl
+  libgtk2-gladexml-perl
+  libgd-gd2-perl
+  python
+  cherrypy
+
+------------------------------------
+Usage:
+  python pyrinter.py
+
+  open web browser and visit 
+  http://localhost:8080/printtext/TEXT_TO_SEND_TO_LABELER
+
+------------------------------------
+Notes:
+  This is alpha release. Would like to remove glade/perl
+requirements down the road, but needed to get out the door for demo.
+
+Some of the perl code used is from: http://apz.fi/blabel/
+
+------------------------------------
+Author:
+  Anthony Oliver
+
+------------------------------------
+TODO:
+  Port entirely to python
+  
+------------------------------------
+Tested on:
+  Ubuntu 10.10 x64
